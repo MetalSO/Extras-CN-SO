@@ -1,15 +1,15 @@
 {
-    "version": "0.3.14",
+    "version": "0.3.27",
     "description": "AI 自主渗透测试系统",
-    "homepage": "https://github.com/Autumn-27/ARTEX",
+    "homepage": "https://github.com/RuoJi6/ARTEX",
     "license": "AGPL-3.0",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/Autumn-27/ARTEX/releases/download/v0.3.14/artex-0.3.14-windows-amd64.zip",
-            "hash": "dde132714981bd6af672ce7a09bcd8010da5d106f7f9d64f4672adfb283ab252"
+            "url": "https://github.com/RuoJi6/ARTEX/releases/download/v0.3.27/artex-0.3.27-windows-amd64.zip",
+            "hash": "033772bf116eeebda5b6b000e10cd5f84016c267d3252f6b4a1141aed0adbc1f"
         }
     },
-    "extract_dir": "artex-0.3.14-windows-amd64",
+    "extract_dir": "artex-0.3.27-windows-amd64",
     "bin": "artex.exe",
     "shortcuts": [
         [
@@ -18,12 +18,12 @@
         ]
     ],
     "checkver": {
-        "github": "https://github.com/Autumn-27/ARTEX"
+        "github": "https://github.com/RuoJi6/ARTEX"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/Autumn-27/ARTEX/releases/download/v$version/artex-$version-windows-amd64.zip"
+                "url": "https://github.com/RuoJi6/ARTEX/releases/download/v$version/artex-$version-windows-amd64.zip"
             }
         },
         "extract_dir": "artex-$version-windows-amd64"
