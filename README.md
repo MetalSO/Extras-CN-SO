@@ -1,6 +1,6 @@
 # MetalSO 的个人 Scoop Bucket
 
-个人维护的 [Scoop](https://github.com/ScoopInstaller/Scoop) bucket，**只存放我自己测试与日常使用的软件清单**，不追求与任何上游仓库同步。
+个人维护的 [Scoop](https://github.com/ScoopInstaller/Scoop) bucket，**只存放我自己测试与日常使用的软件清单**
 
 > 这是个人自用的 bucket。清单按需增删，不保证长期兼容。
 
@@ -11,13 +11,13 @@ scoop bucket add extras-cn-so https://github.com/MetalSO/Extras-CN-SO
 scoop install artex
 ```
 
-（bucket 的本地名字可以随意取，上面的 `extras-cn-so` 只是示例。）
 
 ## 当前收录
 
 | 清单 | 说明 |
 | --- | --- |
-| `AF-Media-Bar` | Windows 10/11 任务栏媒体控制与轻度美化工具 |
+| `af-media-bar` | Windows 10/11 任务栏媒体控制与轻度美化工具 |
+| `aigcpanel` | 一站式 AI 数字人系统，支持视频合成、声音合成与克隆 |
 | `artex` | AI 自主渗透测试系统 |
 
 ## 自动更新
