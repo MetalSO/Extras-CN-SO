@@ -3,25 +3,26 @@
     "description": "把 WorkBuddy 账号变成 OpenAI 兼容 API 的自托管网关面板",
     "homepage": "https://github.com/yreidev/workbuddy2api-panel",
     "license": "AGPL-3.0",
-    "notes": "首次启动会在安装目录生成 config.json、auths/ 和 data/，浏览器打开 http://127.0.0.1:7863/panel/ 添加账号。api_key 见 config.json。",
+    "notes": "配置与账号分别存在 $persist_dir\\data\\config.json 和 $persist_dir\\auths，升级不丢。启动后在浏览器打开 http://127.0.0.1:7863/panel/，用 config.json 里的 api_key 登录。",
     "url": "https://github.com/yreidev/workbuddy2api-panel/releases/download/v1.13.2/wb2api-panel-v1.13.2-windows-amd64.zip",
     "hash": "08c3846e05badd0bed161b9f09a098c1e391d358324db691d782efb62dd50ade",
     "bin": [
         [
             "wb2api.exe",
-            "wb2api"
+            "wb2api",
+            "-config \"$dir\\data\\config.json\""
         ]
     ],
     "shortcuts": [
         [
             "wb2api.exe",
-            "WorkBuddy2API Panel"
+            "WorkBuddy2API Panel",
+            "-config \"$dir\\data\\config.json\""
         ]
     ],
     "persist": [
         "auths",
-        "data",
-        "config.json"
+        "data"
     ],
     "checkver": {
         "github": "https://github.com/yreidev/workbuddy2api-panel"
