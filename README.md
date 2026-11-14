@@ -19,6 +19,7 @@ scoop install artex
 | `af-media-bar` | Windows 10/11 任务栏媒体控制与轻度美化工具 |
 | `aigcpanel` | 一站式 AI 数字人系统，支持视频合成、声音合成与克隆 |
 | `artex` | AI 自主渗透测试系统 |
+| `workbuddy2api-panel` | 把 WorkBuddy 账号变成 OpenAI 兼容 API 的自托管网关面板 |
 
 ## 自动更新
 
