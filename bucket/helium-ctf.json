@@ -1,0 +1,28 @@
+{
+    "version": "1.0.4",
+    "description": "离线也能打比赛的 CTF 工作台，内置全部解题插件，支持 AI 辅助解题",
+    "homepage": "https://aihaiqi.cn/helium-ctf",
+    "license": "MIT",
+    "url": "https://aihaiqi.cn/api/ctf-tools/downloads/Helium-CTF_1.0.4_x64-setup.exe#/dl.7z",
+    "hash": "db83d57eea80dd217939054c2c7f85e313efbd116039fa741c8c59d9d463fcb7",
+    "pre_install": [
+        "Remove-Item \"$dir\\uninstall.exe\" -Force -ErrorAction SilentlyContinue",
+        "Remove-Item \"$dir\\`$PLUGINSDIR\" -Recurse -Force -ErrorAction SilentlyContinue"
+    ],
+    "shortcuts": [
+        [
+            "helium-ctf-tauri.exe",
+            "Helium-CTF"
+        ]
+    ],
+    "suggest": {
+        "Microsoft Edge WebView2": "extras/webview2"
+    },
+    "checkver": {
+        "url": "https://aihaiqi.cn/api/ctf-tools/releases",
+        "jsonpath": "$.data.version"
+    },
+    "autoupdate": {
+        "url": "https://aihaiqi.cn/api/ctf-tools/downloads/Helium-CTF_$version_x64-setup.exe#/dl.7z"
+    }
+}
